@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lainekallio/static/css/main.89a24c08.css",
+    "main.js": "/lainekallio/static/js/main.e14a346d.js",
+    "static/js/787.0c3f432a.chunk.js": "/lainekallio/static/js/787.0c3f432a.chunk.js",
+    "index.html": "/lainekallio/index.html",
+    "static/media/logo.svg": "/lainekallio/static/media/logo.6145c8d74d2de603007be5c09aa47bae.svg",
+    "main.89a24c08.css.map": "/lainekallio/static/css/main.89a24c08.css.map",
+    "main.e14a346d.js.map": "/lainekallio/static/js/main.e14a346d.js.map",
+    "787.0c3f432a.chunk.js.map": "/lainekallio/static/js/787.0c3f432a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89a24c08.css",
+    "static/js/main.e14a346d.js"
+  ]
+}
