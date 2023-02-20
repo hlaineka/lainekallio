@@ -1,0 +1,16 @@
+$fontHeader: 'Barlow', sans-serif;
+
+$color-map: (
+  'primary': #533951,
+  'secondary': #38726C,
+  'tertiary': #BFAB25,
+	'neljas': #CE6C47,
+  'purewhite': #ffffff,
+	'background': #F6E8EA,
+	'shadow-dark': #796978,
+	'shadow-light': #ffffff,
+);
+
+@function palette($color) {
+  @return map-get($color-map, $color);
+}

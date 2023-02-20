@@ -1,0 +1,154 @@
+.header--background {
+  width: 100vw;
+  height: 100vh;
+  background-color: palette("background");
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  .drop-container {
+    width: 200vh;
+    height: 200vh;
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+  }
+
+  .first--drop {
+    position: absolute;
+    top: -100vh;
+    left: -100vh;
+    height: 200vh;
+    width: 200vh;
+    border-radius: 100%;
+    box-shadow: 8px 8px 18px 0 palette("shadow-dark"),
+      8px 8px 18px 0 palette("shadow-dark") inset,
+      -8px -8px 18px 0 palette("shadow-light"),
+      -8px -8px 18px 0 palette("shadow-light") inset,
+      8px 8px 13px palette("shadow-light") inset;
+    background-color: transparent;
+    border: 24px solid palette("background");
+    filter: blur(10px);
+    animation-name: drop1In;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+  }
+
+  .second--drop {
+    position: absolute;
+    top: -50vh;
+    left: -50vh;
+    height: 100vh;
+    width: 100vh;
+    border-radius: 100%;
+    box-shadow: 8px 8px 18px 0 palette("shadow-dark"),
+      8px 8px 18px 0 palette("shadow-dark") inset,
+      -8px -8px 18px 0 palette("shadow-light"),
+      -8px -8px 18px 0 palette("shadow-light") inset,
+      8px 8px 13px palette("shadow-light") inset;
+    background-color: transparent;
+    border: 24px solid palette("background");
+    filter: blur(10px);
+    animation-name: drop2In;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+  }
+
+  .third--drop {
+    position: absolute;
+    top: -25vh;
+    left: -25vh;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 100%;
+    box-shadow: 8px 8px 18px 0 palette("shadow-dark"),
+      8px 8px 18px 0 palette("shadow-dark") inset,
+      -8px -8px 18px 0 palette("shadow-light"),
+      -8px -8px 18px 0 palette("shadow-light") inset,
+      8px 8px 13px palette("shadow-light") inset;
+    background-color: transparent;
+    border: 16px solid palette("background");
+    filter: blur(10px);
+    animation-name: drop3In;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+  }
+
+  .fourth--drop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-radius: 100%;
+    box-shadow: 8px 8px 18px 0 palette("shadow-dark"),
+      8px 8px 18px 0 palette("shadow-dark") inset,
+      -8px -8px 18px 0 palette("shadow-light"),
+      -8px -8px 18px 0 palette("shadow-light") inset,
+      8px 8px 13px palette("shadow-light") inset;
+    background-color: transparent;
+    border: 16px solid palette("background");
+    filter: blur(10px);
+    animation-name: drop4In;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+  }
+}
+
+.header-container {
+  position: absolute;
+  width: 60vw;
+  max-width: 900px;
+  height: 60vh;
+  max-height: 600px;
+  border-radius: 2vh;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 2px 2px 16px 0 palette("primary"),
+    -2px -2px 3px 0 palette("primary") inset,
+    -2px -2px 16px 0 palette("shadow-light"),
+    2px 2px 3px 0 palette("shadow-light") inset;
+}
+
+.header-text-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+
+  h1 {
+    position: relative;
+    margin: 0;
+    line-height: 10rem;
+    color: palette("primary");
+    font-family: $fontHeader;
+    font-weight: 200;
+    font-size: 5rem;
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo-img {
+    width: 10rem;
+    height: auto;
+  }
+}

@@ -1,0 +1,45 @@
+.page-scroll-container {
+	position: fixed;
+	top: 50%;
+	right: 2rem;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	z-index: 10;
+
+	&.active-page-0 {
+		.page-scroll-indicator {
+			background-color: palette("background");
+			border: 2px solid palette("primary");
+			&.active {
+				background-color: palette("primary");
+			}
+		}
+	}
+
+	&.active-page-2 {
+		.page-scroll-indicator {
+			background-color: palette("primary");
+			border: 2px solid palette("background");
+			&.active {
+				background-color: palette("background");
+				border: 2px solid palette("primary");
+			}
+		}
+	}
+
+	.page-scroll-indicator {
+		-webkit-appearance: none;
+		appearance: none;
+		margin: 0;
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		margin: .5rem;
+
+		&.page-scroll-page-1 {
+
+		}
+
+	}
+}

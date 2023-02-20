@@ -1,0 +1,104 @@
+@keyframes drop1In {
+  from {
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+  }
+  to {
+    top: -100vh;
+    left: -100vh;
+    height: 200vh;
+    width: 200vh;
+  }
+}
+
+@keyframes drop2In {
+  0% {
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border: none;
+    box-shadow: none;
+  }
+  18% {
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border: none;
+    box-shadow: none;
+  }
+  20% {
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    box-shadow: 8px 8px 18px 0 palette("shadow-dark"),
+      8px 8px 18px 0 palette("shadow-dark") inset,
+      -8px -8px 18px 0 palette("shadow-light"),
+      -8px -8px 18px 0 palette("shadow-light") inset,
+      8px 8px 13px palette("shadow-light") inset;
+    border: 24px solid palette("background");
+  }
+  100% {
+    top: -50vh;
+    left: -50vh;
+    height: 100vh;
+    width: 100vh;
+  }
+}
+
+@keyframes drop3In {
+  0% {
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border: none;
+    box-shadow: none;
+  }
+  28% {
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border: none;
+    box-shadow: none;
+  }
+  30% {
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    box-shadow: 8px 8px 18px 0 palette("shadow-dark"),
+      8px 8px 18px 0 palette("shadow-dark") inset,
+      -8px -8px 18px 0 palette("shadow-light"),
+      -8px -8px 18px 0 palette("shadow-light") inset,
+      8px 8px 13px palette("shadow-light") inset;
+    border: 16px solid palette("background");
+  }
+  100% {
+    top: -25vh;
+    left: -25vh;
+    height: 50vh;
+    width: 50vh;
+  }
+}
+
+@keyframes drop4In {
+	60% {
+		box-shadow: none;
+		border: none;
+	}
+  62% {
+    box-shadow: 8px 8px 18px 0 palette("shadow-dark"),
+      8px 8px 18px 0 palette("shadow-dark") inset,
+      -8px -8px 18px 0 palette("shadow-light"),
+      -8px -8px 18px 0 palette("shadow-light") inset,
+      8px 8px 13px palette("shadow-light") inset;
+    background-color: transparent;
+    border: 16px solid palette("background");
+  }
+}
